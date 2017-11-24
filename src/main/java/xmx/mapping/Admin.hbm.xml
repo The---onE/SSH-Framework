@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017-11-24 11:58:51 by Hibernate Tools 5.2.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="framework" dynamic-insert="false" dynamic-update="false" mutable="true" name="xmx.model.Admin" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="admin">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="username" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="username" not-null="true" unique="true"/>
+        </property>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="password" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="state" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="state"/>
+        </property>
+        <property generated="never" lazy="false" name="createTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="create_time" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

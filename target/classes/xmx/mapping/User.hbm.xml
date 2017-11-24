@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017-11-24 11:58:51 by Hibernate Tools 5.2.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="framework" dynamic-insert="false" dynamic-update="false" mutable="true" name="xmx.model.User" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="user">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="username" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="username" not-null="true" unique="true"/>
+        </property>
+        <property generated="never" lazy="false" name="password" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="password" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="phone" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="phone"/>
+        </property>
+        <property generated="never" lazy="false" name="email" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="email"/>
+        </property>
+        <property generated="never" lazy="false" name="birthday" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="birthday"/>
+        </property>
+        <property generated="never" lazy="false" name="sex" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="sex"/>
+        </property>
+        <property generated="never" lazy="false" name="state" optimistic-lock="true" type="int" unique="false">
+            <column name="state" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="createTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="create_time" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

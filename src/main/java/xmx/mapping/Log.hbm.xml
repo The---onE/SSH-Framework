@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2017-11-24 11:58:51 by Hibernate Tools 5.2.6.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="framework" dynamic-insert="false" dynamic-update="false" mutable="true" name="xmx.model.Log" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="log">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="type" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="type"/>
+        </property>
+        <property generated="never" lazy="false" name="target" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="target"/>
+        </property>
+        <property generated="never" lazy="false" name="method" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="method"/>
+        </property>
+        <property generated="never" lazy="false" name="param" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="param"/>
+        </property>
+        <property generated="never" lazy="false" name="user" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="user"/>
+        </property>
+        <property generated="never" lazy="false" name="userType" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="user_type"/>
+        </property>
+        <property generated="never" lazy="false" name="ip" optimistic-lock="true" type="string" unique="false">
+            <column length="45" name="ip"/>
+        </property>
+        <property generated="never" lazy="false" name="createTime" optimistic-lock="true" type="timestamp" unique="false">
+            <column length="19" name="create_time" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
